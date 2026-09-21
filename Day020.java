@@ -6,7 +6,7 @@ public class Day020 {
         int  angka = 200;
         
               String hasil = String.valueOf(angka);
-             System.out.println("hasil tipe data int ke String : "+ angka);
+             System.out.println("hasil tipe data int ke String : "+ hasil);
   
         
         
