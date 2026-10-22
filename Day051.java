@@ -1,6 +1,6 @@
 package pkg100dayscoding;
 
-public class Day050 {
+public class Day051 {
     public static void main(String[] args) {
 
         for (int i = 1; i <= 5; i++) {
