@@ -1,40 +1,23 @@
-
 import java.util.Scanner;
 
-public class LoginAkademik {
+public class Day075 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Masukkan username: ");
-        String username = input.nextLine();
+        System.out.print("Masukkan kata: ");
+        String kata = input.nextLine();
 
-        System.out.print("Masukkan password: ");
-        String password = input.nextLine();
+        System.out.print("Masukkan kata pembanding: ");
+        String pembanding = input.nextLine();
 
-        System.out.print("Masukkan program studi: ");
-        String prodi = input.nextLine();
+        System.out.print("Masukkan huruf yang dicari: ");
+        String huruf = input.nextLine();
 
-        if (username.isEmpty()) {
-            System.out.println("Username wajib diisi");
-        }
-
-        if (password.equals("Java123")) {
-            System.out.println("Password benar");
-        }
-
-        if (prodi.equalsIgnoreCase("informatika")) {
-            System.out.println("Program studi sesuai");
-        }
-
-        if (prodi.contains("Teknik")) {
-            System.out.println("Berada di Fakultas Teknik");
-        }
-
-        if (!username.isEmpty() && password.equals("Java123")) {
-            System.out.println("Login berhasil");
-        } else {
-            System.out.println("Login gagal");
-        }
+        System.out.println("\n=== HASIL PENGECEKAN ===");
+        System.out.println("equals: " + kata.equals(pembanding));
+        System.out.println("equalsIgnoreCase: " + kata.equalsIgnoreCase(pembanding));
+        System.out.println("contains: " + kata.contains(huruf));
+        System.out.println("isEmpty: " + kata.isEmpty());
 
         input.close();
     }
